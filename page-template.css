@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100vh;
+  padding: 59px 20px 20px 220px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 10px;
+  transition: all 0.15s;
+}
+.navbar a:hover {
+  transform: translateY(-3px);
+}
+.user-info {
+  width: 200px;
+  border-right: 1px solid black;
+  position: fixed;
+  top: 39.5px;
+  left: 0;
+  bottom: 0;
+}
+.profile {
+  border-bottom: 1px solid black;
+  padding: 8px 20px;
+}
+.user-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+img {
+  margin-bottom: 15px;
+  height: 71px;
+  width: 71px;
+  border: none;
+}
+.username {
+  text-align: center;
+}
+p {
+  font-weight: bold;
+}
+/* progress */
+.progress {
+  padding: 20px;
+  border-top: 1px solid rgba(10, 10, 10, 0.2);
+  border-bottom: 1px solid rgba(10, 10, 10, 0.2);
+}
+.progress-row {
+  display: flex;
+  margin-bottom: 15px;
+}
+.progress-row-task {
+  display: flex;
+}
+.progress-icon {
+  width: 42px;
+  height: 42px;
+}
+.progress-icon img {
+  width: 32px;
+  height: 32px;
+}
+.progress-text-muted {
+  opacity: 0.5;
+}
+.progress-text p {
+  font-size: 14px;
+}
+/* badges */
+.badges {
+  padding: 20px;
+}
+.badges h2 {
+  margin-bottom: 12px;
+}
+.badges-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.badges-icon:hover {
+  transform: translateY(-5px);
+}
+.badges p {
+  margin-top: -10px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  body {
+    padding: 59px 20px 20px 20px;
+  }
+  .user-info {
+    display: none;
+  }
+}
