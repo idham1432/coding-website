@@ -1,4 +1,4 @@
-# 🧠 CodeLearn - Online Coding Education Platform
+# CodeLearn - Online Coding Education Platform
 
 ![Header](header.png)
 
